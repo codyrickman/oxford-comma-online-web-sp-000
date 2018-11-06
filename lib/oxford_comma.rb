@@ -1,8 +1,8 @@
 def oxford_comma(array)
   if array.length == 1
-    return array;
+    return array[1];
   elsif array.length == 2
-    retrun array.join("and");
+    return array.join("and");
   else
     length = array.length - 1;
     index =  (1..length).to_a;
