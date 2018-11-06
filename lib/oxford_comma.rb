@@ -8,7 +8,8 @@ def oxford_comma(array)
     index =  (1..length).to_a;
     new_array = ["#{array[0]},"];
     index.shift;
-    index.until == index.length - 1 do |index|
+    inde.pop;
+    index.each do |index|
       new_array << " #{array[index]},";
     end
     joined = new_array.join;
