@@ -6,7 +6,8 @@ def oxford_comma(array)
   else
     length = array.length - 1;
     index =  (1..length).to_a;
-    new_array = [];
+    new_array = ["#{array[0]},"];
+    index.shift;
     index.each do |index|
       new_array << " #{array[index]},";
     end
